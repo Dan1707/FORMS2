@@ -1,0 +1,112 @@
+// DEFAULT
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+@mixin title {
+  font-weight: 800;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+@mixin item {
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.wrapper {
+  max-width: 1160px;
+  margin: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: rgb(195, 216, 255);
+  border-radius: 20px;
+  padding: 15px 60px;
+}
+.legend {
+  font-weight: 600;
+  font-size: 20px;
+  background-color: blue;
+  color: #ffffff !important;
+  padding: 10px;
+  border-radius: 15px;
+}
+// INTEREST
+.interest {
+  &__title {
+    @include title();
+  }
+
+  &__item {
+    @include item();
+    &_wrapper {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    &_text {
+      font-weight: 400;
+      font-size: 15px;
+      color: rgb(97, 97, 97);
+    }
+  }
+}
+// TEST
+.test {
+  &__title {
+    @include title();
+  }
+
+  &__menu {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    &_item {
+      @include item();
+    }
+
+    &_title {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    border: none;
+    padding: 20px;
+    background-color: lightgreen;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+  }
+}

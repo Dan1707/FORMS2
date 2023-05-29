@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset class="wrapper">
+      <legend class="legend">Some information about yourself</legend>
+      <form class="interest">
+        <h2 class="interest__title">My Hobbies</h2>
+        <div class="interest__item_wrapper">
+          <span class="interest__item">
+            <h4 class="interest__item_title">Playing the Guitar</h4>
+            <p class="interest__item_text">
+              I'm really like playing my favorite songs. I've been learning to
+              it for 5 years in the 1st music school.
+            </p>
+            <input
+              type="range"
+              class="interest__item_range"
+              min="1"
+              max="5"
+              value="5"
+            />
+          </span>
+          <span class="interest__item">
+            <h4 class="interest__item_title">Reading Books</h4>
+            <p class="interest__item_text">
+              Everybody knows that it's very important to read the books,
+              because it helps you improve your knowladge. As for me, the most
+              interesting ganre it's historical books.
+            </p>
+            <input
+              type="range"
+              class="interest__item_range"
+              min="1"
+              max="5"
+              value="4"
+            />
+          </span>
+          <span class="interest__item">
+            <h4 class="interest__item_title">WEB-Developing</h4>
+            <p class="interest__item_text">
+              I started learning it many years ago and now I have really good
+              resaults in it.
+            </p>
+            <input
+              type="range"
+              class="interest__item_range"
+              min="1"
+              max="5"
+              value="5"
+            />
+          </span>
+          <span class="interest__item">
+            <h4 class="interest__item_title">Playing Computer Games</h4>
+            <p class="interest__item_text">
+              Sometimes, after long day, I prefer to relax with my favorite
+              video games such as Minecraft, Mount and blade, CS:GO and Mafia 2.
+            </p>
+            <input
+              type="range"
+              class="interest__item_range"
+              min="1"
+              max="5"
+              value="3"
+            />
+          </span>
+        </div>
+      </form>
+      <form class="test">
+        <h1 class="test__title">Test</h1>
+        <ul class="test__menu">
+          <li class="test__menu_item">
+            <h4 class="test__menu_title">What is your favorite snack?</h4>
+            <select class="test__menu_select">
+              <option>Chocolates</option>
+              <option>Potato Chips</option>
+              <option>Ice Cream</option>
+              <option>Pop Corn</option>
+              <option>Cookies</option>
+            </select>
+          </li>
+          <li class="test__menu_item">
+            <h4 class="test__menu_title">Select your favorite music genre?</h4>
+            <label class="test__menu_radio">
+              <input type="radio" name="Rock" /> Rock
+            </label>
+            <label class="test__menu_radio">
+              <input type="radio" name="Jazz" /> Jazz
+            </label>
+            <label class="test__menu_radio">
+              <input type="radio" name="Country" /> Country
+            </label>
+            <label class="test__menu_radio">
+              <input type="radio" name="Bluse" /> Blues
+            </label>
+            <label class="test__menu_radio">
+              <input type="radio" name="Pank" /> Pank
+            </label>
+          </li>
+          <li class="test__menu_item">
+            <h4 class="test__menu_title">What are your hobbies?</h4>
+            <label class="test__menu_checkbox">
+              <input type="checkbox" name="" id="" /> Watching films
+            </label>
+            <label class="test__menu_checkbox">
+              <input type="checkbox" name="" id="" /> Riding a bicicle
+            </label>
+            <label class="test__menu_checkbox">
+              <input type="checkbox" name="" id="" /> Listening to music
+            </label>
+            <label class="test__menu_checkbox">
+              <input type="checkbox" name="" id="" /> Painting
+            </label>
+          </li>
+          <li class="test__menu_item">
+            <h4 class="test__menu_title">
+              What are your impressions of learning HTML?
+              <input
+                type="text"
+                class="test__menu_text"
+                placeholder="Type a few words..."
+              />
+            </h4>
+          </li>
+          <li class="test__menu_item">
+            <h4 class="test__menu_title">
+              Would you like to receive the survey results via email?
+            </h4>
+            <label for="">
+              <input type="checkbox" name="email send" /> Yes, send me the
+              results
+            </label>
+          </li>
+        </ul>
+        <input type="submit" class="test__btn" value="Finish!" />
+      </form>
+    </fieldset>
+  </body>
+</html>
